@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — FSG Begnins</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+
+    .card {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 48px 48px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 32px 24px; }
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      background: #00AEEF;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo svg { display: block; }
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #00AEEF;
+      line-height: 1.2;
+    }
+    .header-text p {
+      font-size: 13px;
+      color: #888;
+      margin-top: 3px;
+    }
+
+    /* Sections */
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #00AEEF;
+      margin-top: 36px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px; height: 18px;
+      background: #00AEEF;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p { margin-bottom: 10px; font-size: 15px; color: #333; }
+
+    ul {
+      margin: 8px 0 10px 20px;
+      font-size: 15px;
+      color: #333;
+    }
+    ul li { margin-bottom: 4px; }
+
+    .highlight {
+      background: #E6F7FD;
+      border-left: 4px solid #00AEEF;
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: #0085B8;
+    }
+
+    a { color: #00AEEF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+    .footer a { color: #00AEEF; }
+  </style>
+</head>
+<body>
+<div class="card">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Silhouette gymnaste simplifiée -->
+        <circle cx="11" cy="7" r="3" fill="#58595B"/>
+        <line x1="11" y1="10" x2="11" y2="20" stroke="#58595B" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="11" y1="13" x2="7"  y2="17" stroke="#58595B" stroke-width="2"   stroke-linecap="round"/>
+        <line x1="11" y1="13" x2="15" y2="16" stroke="#58595B" stroke-width="2"   stroke-linecap="round"/>
+        <line x1="11" y1="20" x2="8"  y2="26" stroke="#58595B" stroke-width="2"   stroke-linecap="round"/>
+        <line x1="11" y1="20" x2="14" y2="26" stroke="#58595B" stroke-width="2"   stroke-linecap="round"/>
+        <circle cx="22" cy="7" r="3" fill="white"/>
+        <line x1="22" y1="10" x2="22" y2="20" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="22" y1="13" x2="18" y2="16" stroke="white" stroke-width="2"   stroke-linecap="round"/>
+        <line x1="22" y1="13" x2="26" y2="17" stroke="white" stroke-width="2"   stroke-linecap="round"/>
+        <line x1="22" y1="20" x2="19" y2="26" stroke="white" stroke-width="2"   stroke-linecap="round"/>
+        <line x1="22" y1="20" x2="25" y2="26" stroke="white" stroke-width="2"   stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="header-text">
+      <h1>FSG Begnins</h1>
+      <p>Politique de confidentialité</p>
+    </div>
+  </div>
+
+  <p>
+    La présente politique de confidentialité décrit comment l'application mobile
+    <strong>FSG Begnins</strong> collecte, utilise et protège vos données personnelles.
+    Elle s'applique à toutes les personnes utilisant l'application (moniteurs et administrateurs
+    de la section agrès de la Fédération de Gymnastique de Begnins, Vaud, Suisse).
+  </p>
+
+  <div class="highlight">
+    Dernière mise à jour : juin 2025 — L'application est destinée exclusivement aux membres
+    actifs de la FSG Begnins. Elle n'est pas accessible au grand public sans validation d'un administrateur.
+  </div>
+
+  <!-- 1 -->
+  <h2>Données collectées</h2>
+  <p>Lors de votre inscription et de l'utilisation de l'application, nous collectons :</p>
+  <ul>
+    <li><strong>Identité :</strong> prénom, nom</li>
+    <li><strong>Contact :</strong> adresse e-mail</li>
+    <li><strong>Rôle et disponibilités :</strong> rôle (moniteur / administrateur), jours d'entraînement</li>
+    <li><strong>Activité dans l'app :</strong> absences déclarées, présences enregistrées, notes de concours, remarques sur les gymnastes, compte-rendus de réunion</li>
+    <li><strong>Token de notification :</strong> identifiant technique généré par votre appareil pour l'envoi de notifications push (Expo / Firebase Cloud Messaging)</li>
+  </ul>
+  <p>Nous ne collectons pas de données de localisation, de photos personnelles ni d'informations de paiement.</p>
+
+  <!-- 2 -->
+  <h2>Utilisation des données</h2>
+  <p>Les données collectées sont utilisées exclusivement pour :</p>
+  <ul>
+    <li>Gérer l'accès à l'application (authentification, validation de compte)</li>
+    <li>Coordonner les entraînements, concours et réunions entre moniteurs</li>
+    <li>Envoyer des notifications push pertinentes (absences, rappels, résultats)</li>
+    <li>Tenir des fiches de suivi pour les gymnastes de la section</li>
+  </ul>
+  <p>Vos données ne sont jamais vendues, louées ni partagées avec des tiers à des fins commerciales.</p>
+
+  <!-- 3 -->
+  <h2>Stockage et hébergement</h2>
+  <p>
+    Toutes les données sont stockées sur <strong>Google Firebase</strong> (Firestore, Authentication,
+    Cloud Storage, Cloud Messaging), dont les serveurs sont opérés par Google LLC.
+    Firebase est conforme au RGPD et au droit suisse sur la protection des données (nLPD).
+  </p>
+  <p>
+    Pour plus d'informations sur les pratiques de confidentialité de Firebase :
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+      firebase.google.com/support/privacy
+    </a>
+  </p>
+
+  <!-- 4 -->
+  <h2>Accès aux données</h2>
+  <p>
+    Seuls les membres actifs validés par un administrateur peuvent accéder à l'application.
+    Les administrateurs de la FSG Begnins ont accès à l'ensemble des données nécessaires
+    à la gestion de la section. Aucun accès extérieur n'est autorisé.
+  </p>
+
+  <!-- 5 -->
+  <h2>Durée de conservation</h2>
+  <p>
+    Les données sont conservées aussi longtemps que le compte est actif.
+    Un administrateur peut supprimer ou archiver un compte à tout moment.
+    Les données historiques (rapports d'entraînement, résultats de concours) peuvent être
+    conservées à des fins d'archivage interne au-delà de la désactivation du compte.
+  </p>
+
+  <!-- 6 -->
+  <h2>Vos droits</h2>
+  <p>Conformément au RGPD et à la nLPD, vous disposez des droits suivants :</p>
+  <ul>
+    <li><strong>Accès :</strong> obtenir une copie de vos données personnelles</li>
+    <li><strong>Rectification :</strong> corriger des données inexactes</li>
+    <li><strong>Suppression :</strong> demander la suppression de votre compte et de vos données</li>
+    <li><strong>Opposition :</strong> vous opposer à certains traitements</li>
+  </ul>
+  <p>
+    Pour exercer ces droits, contactez-nous à :
+    <a href="mailto:dev@kfmn.ch">dev@kfmn.ch</a>
+  </p>
+
+  <!-- 7 -->
+  <h2>Notifications push</h2>
+  <p>
+    L'application peut envoyer des notifications push via Expo et Firebase Cloud Messaging.
+    Ces notifications sont liées à l'activité de la section (absences, rappels de concours,
+    résultats, communications des administrateurs). Vous pouvez désactiver les notifications
+    à tout moment dans les réglages de votre appareil.
+  </p>
+
+  <!-- 8 -->
+  <h2>Sécurité</h2>
+  <p>
+    L'accès aux données est protégé par authentification Firebase et par des règles de
+    sécurité Firestore qui limitent chaque utilisateur aux données auxquelles il a droit.
+    Les communications entre l'application et Firebase sont chiffrées via HTTPS/TLS.
+  </p>
+
+  <!-- 9 -->
+  <h2>Modifications</h2>
+  <p>
+    Cette politique peut être mise à jour pour refléter des évolutions de l'application.
+    En cas de modification importante, les utilisateurs en seront informés via une notification
+    dans l'application. La date de dernière mise à jour est indiquée en haut de ce document.
+  </p>
+
+  <!-- 10 -->
+  <h2>Contact</h2>
+  <p>
+    Pour toute question relative à cette politique ou à l'utilisation de vos données :
+  </p>
+  <p>
+    <strong>FSG Begnins — Section Agrès</strong><br />
+    Begnins, Vaud, Suisse<br />
+    <a href="mailto:dev@kfmn.ch">dev@kfmn.ch</a>
+  </p>
+
+  <div class="footer">
+    &copy; 2025 FSG Begnins ·
+    <a href="mailto:dev@kfmn.ch">dev@kfmn.ch</a>
+  </div>
+
+</div>
+</body>
+</html>
