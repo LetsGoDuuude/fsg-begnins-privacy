@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suppression de compte — FSG Begnins</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+      line-height: 1.7;
+      padding: 24px 16px 64px;
+    }
+
+    .card {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 48px 48px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+
+    @media (max-width: 600px) {
+      .card { padding: 32px 24px; }
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #eee;
+    }
+    .logo { width: 60px; height: 60px; flex-shrink: 0; }
+    .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    .header-text h1 { font-size: 22px; font-weight: 800; color: #00AEEF; line-height: 1.2; }
+    .header-text p { font-size: 13px; color: #888; margin-top: 3px; }
+
+    h2 {
+      font-size: 16px; font-weight: 700; color: #00AEEF;
+      margin-top: 36px; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    h2::before {
+      content: ''; display: inline-block;
+      width: 4px; height: 18px;
+      background: #00AEEF; border-radius: 2px; flex-shrink: 0;
+    }
+
+    p { margin-bottom: 10px; font-size: 15px; color: #333; }
+    ul { margin: 8px 0 10px 20px; font-size: 15px; color: #333; }
+    ul li { margin-bottom: 6px; }
+
+    .steps { counter-reset: step; list-style: none; margin: 16px 0; padding: 0; }
+    .steps li {
+      counter-increment: step;
+      display: flex; align-items: flex-start; gap: 14px;
+      margin-bottom: 16px; font-size: 15px; color: #333;
+    }
+    .steps li::before {
+      content: counter(step);
+      display: flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px; min-width: 28px;
+      background: #00AEEF; color: #fff;
+      font-weight: 700; font-size: 13px; border-radius: 50%;
+    }
+
+    .highlight {
+      background: #E6F7FD; border-left: 4px solid #00AEEF;
+      border-radius: 0 10px 10px 0; padding: 14px 18px;
+      margin: 14px 0; font-size: 14px; color: #0085B8;
+    }
+    .warning {
+      background: #FFF8E1; border-left: 4px solid #FFB300;
+      border-radius: 0 10px 10px 0; padding: 14px 18px;
+      margin: 14px 0; font-size: 14px; color: #7B5800;
+    }
+
+    .email-btn {
+      display: inline-block; margin-top: 8px;
+      padding: 12px 24px; background: #00AEEF; color: #fff;
+      border-radius: 10px; font-weight: 700; font-size: 15px; text-decoration: none;
+    }
+    .email-btn:hover { background: #0085B8; }
+
+    a { color: #00AEEF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      margin-top: 40px; padding-top: 24px; border-top: 1px solid #eee;
+      font-size: 13px; color: #aaa; text-align: center;
+    }
+    .footer a { color: #00AEEF; }
+  </style>
+</head>
+<body>
+<div class="card">
+
+  <div class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo FSG Begnins" />
+    </div>
+    <div class="header-text">
+      <h1>FSG Begnins</h1>
+      <p>Suppression de compte</p>
+    </div>
+  </div>
+
+  <p>
+    Cette page vous explique comment demander la suppression de votre compte
+    dans l'application <strong>FSG Begnins</strong> et quelles données seront supprimées ou conservées.
+  </p>
+
+  <h2>Comment demander la suppression</h2>
+  <p>La suppression de compte se fait par e-mail à l'administrateur de l'application :</p>
+
+  <ol class="steps">
+    <li>
+      Envoyez un e-mail à <strong>dev@kfmn.ch</strong> depuis l'adresse e-mail
+      associée à votre compte FSG Begnins.
+    </li>
+    <li>
+      Indiquez en objet : <strong>Suppression de compte FSG Begnins</strong>
+      et précisez votre prénom et nom dans le message.
+    </li>
+    <li>
+      Votre demande sera traitée dans un délai de <strong>7 jours ouvrables</strong>.
+      Vous recevrez une confirmation par e-mail une fois la suppression effectuée.
+    </li>
+  </ol>
+
+  <a href="mailto:dev@kfmn.ch?subject=Suppression%20de%20compte%20FSG%20Begnins&body=Bonjour%2C%0A%0AJe%20souhaite%20supprimer%20mon%20compte%20FSG%20Begnins.%0A%0APr%C3%A9nom%20%3A%20%0ANom%20%3A%20%0A%0AMerci." class="email-btn">
+    Envoyer la demande par e-mail
+  </a>
+
+  <h2>Données supprimées</h2>
+  <p>Suite à votre demande, les données suivantes seront <strong>définitivement supprimées</strong> :</p>
+  <ul>
+    <li>Votre compte d'authentification (e-mail, mot de passe)</li>
+    <li>Votre profil : prénom, nom, rôle, jours d'entraînement</li>
+    <li>Votre token de notification push</li>
+    <li>Vos absences déclarées</li>
+  </ul>
+
+  <h2>Données conservées</h2>
+  <div class="warning">
+    Certaines données peuvent être conservées à des fins d'archivage interne de la section :
+  </div>
+  <ul>
+    <li>Les <strong>remarques sur les gymnastes</strong> que vous avez rédigées — l'auteur sera anonymisé (mention « Moniteur »).</li>
+    <li>Les <strong>fiches d'entraînement</strong> auxquelles vous avez contribué — conservées dans l'historique de la section.</li>
+    <li>Les <strong>notes de concours</strong> saisies par vos soins — conservées dans les résultats archivés.</li>
+  </ul>
+
+  <div class="highlight">
+    Toutes les données personnelles permettant de vous identifier (nom, e-mail, compte)
+    sont supprimées dans les 7 jours suivant votre demande.
+    Les données pédagogiques liées aux gymnastes sont anonymisées et conservées.
+  </div>
+
+  <h2>Contact</h2>
+  <p>
+    <strong>FSG Begnins — Section Agrès</strong><br />
+    Begnins, Vaud, Suisse<br />
+    <a href="mailto:dev@kfmn.ch">dev@kfmn.ch</a>
+  </p>
+  <p><a href="index.html">← Politique de confidentialité complète</a></p>
+
+  <div class="footer">
+    &copy; 2025 FSG Begnins · <a href="mailto:dev@kfmn.ch">dev@kfmn.ch</a>
+  </div>
+
+</div>
+</body>
+</html>
